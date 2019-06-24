@@ -17,10 +17,10 @@ namespace Api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = "http://localhost:12796";
                     options.RequireHttpsMetadata = false;
 
-                    options.Audience = "api1";
+                    options.Audience = "openauthapi";
                 });
 
             services.AddCors(options =>

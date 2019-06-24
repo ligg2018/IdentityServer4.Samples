@@ -56,7 +56,7 @@ namespace IdentityServer
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "My API")
+                new ApiResource("openauthapi", "My API")
             };
         }
 
@@ -78,7 +78,7 @@ namespace IdentityServer
                     },
 
                     // scopes that client has access to
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "openauthapi" }
                 },
                 // resource owner password grant client
                 new Client
@@ -90,7 +90,7 @@ namespace IdentityServer
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "openauthapi" }
                 },
                 // OpenID Connect hybrid flow client (MVC)
                 new Client
@@ -111,7 +111,7 @@ namespace IdentityServer
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "api1"
+                        "openauthapi"
                     },
 
                     AllowOfflineAccess = true
@@ -133,7 +133,7 @@ namespace IdentityServer
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "api1"
+                        "openauthapi"
                     }
                 }
             };

@@ -287,3 +287,4 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 lib
+/Quickstarts/6_JavaScriptClient/src/IdentityServer/tempkey.rsa

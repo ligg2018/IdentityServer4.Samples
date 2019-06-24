@@ -16,7 +16,7 @@ namespace ResourceOwnerClient
             // discover endpoints from metadata
             var client = new HttpClient();
 
-            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:5000");
+            var disco = await client.GetDiscoveryDocumentAsync("http://localhost:12796");
             if (disco.IsError)
             {
                 Console.WriteLine(disco.Error);
@@ -32,7 +32,7 @@ namespace ResourceOwnerClient
 
                 UserName = "alice",
                 Password = "password",
-                Scope = "api1"
+                Scope = "openauthapi"
             });
 
             if (tokenResponse.IsError)
