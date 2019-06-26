@@ -119,7 +119,7 @@ namespace IdentityServer
                 // JavaScript Client
                 new Client
                 {
-                    ClientId = "js",
+                    ClientId = "OpenAuth.Pro",
                     ClientName = "JavaScript Client",
                     AllowedGrantTypes = GrantTypes.Code,
                     RequirePkce = true,
